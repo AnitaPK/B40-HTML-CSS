@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            box-sizing: border-box;
+        }
+
         div{
             background-image: url('./assets/burgerImage.jpg');
             background-repeat: no-repeat;
             background-position: right;
-            background-attachment: fixed;
+            /* background-attachment: fixed; */
         }
         p{
             width:70%;
@@ -29,9 +33,48 @@
             margin-left: 10px;
 
         }
+        ul{
+            list-style-type: none;
+            height: 90px;
+            background-color: rgba(255, 219, 121, 0.813);
+        }
+        ul li{
+            float: left;
+            margin: 10px;
+            font-family: "Lucida Console", "Courier New", monospace;
+            padding: 25px 10px;
+
+        }
+        ul li a:link{
+            color:rgba(129, 17, 17, 0.938);
+            text-decoration: none;
+            padding: 4px;
+        }
+        ul li a:hover{
+            /* background-color: coral; */
+            border-bottom: 4px solid rgb(255, 102, 47);
+        }
+        ul li a:visited{
+            color:rgba(129, 17, 17, 0.938);
+
+        }
+        ul img{
+            width:90px;
+            height: 90px;
+            border-radius: 50%;
+            float: left;
+        }
     </style>
 </head>
 <body>
+    <ul>
+        <a href="./receiptDashboard.html"><img src="./assets/logo.jpg" alt="LogoImage" /></a>
+
+        <li><a href="./receiptDashboard.html">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact us</a></li>
+    </ul>
     <header>
         <img src="./assets/logo.jpg" alt="headerImage" style=" display: block; margin: auto;" />
     </header>
