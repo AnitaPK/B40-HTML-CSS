@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+}
+ul.nav{
+    list-style-type: none;
+    height: 90px;
+    background-color: rgba(255, 219, 121, 0.813);
+}
+ul.nav li.navItems{
+    float: left;
+    margin: 10px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding: 25px 10px;
+
+}
+ul.nav li.navItems a.navLink:link{
+    color:rgba(129, 17, 17, 0.938);
+    text-decoration: none;
+    padding: 4px;
+}
+ul.nav li.navItems a.navLink:hover{
+    /* background-color: coral; */
+    border-bottom: 4px solid rgb(255, 102, 47);
+}
+ul.nav li.navItems a.navLink:visited{
+    color:rgba(129, 17, 17, 0.938);
+
+}
+ul.nav img.logo{
+    width:90px;
+    height: 90px;
+    border-radius: 50%;
+    float: left;
+}

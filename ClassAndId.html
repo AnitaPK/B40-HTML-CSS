@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<HEAD>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+
+        }
+        .borderBlack{
+            border: 1px solid black;
+            background-color: gray !important;
+        }
+        .borderRed{
+            border: 1px solid red;
+            width: 120px;
+        }
+        .borderBlue{
+            border: 1px solid blue;
+            background-color: skyblue;
+        }
+        div{
+            margin-bottom: 5px;
+            background-color: aquamarine;
+        }
+        div h3{
+            color: brown;
+            text-align: center;
+        }
+        div h5{
+            color: rgb(169, 2, 2);
+            text-align: center;
+            margin: 5px auto;
+        }
+        .fontFamily{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #Demo{
+            background-color: blue;
+            color: aliceblue;
+            font-size: 130%;
+        }
+    </style>
+</HEAD>
+<body>
+    <div style="background-color: blueviolet;" class="borderBlack fontFamily" >
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <h5 class="borderRed">Uttar Pradesh</h5>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia esse sed, saepe laborum eos error.</p>
+    </div>
+    <div class="borderBlue fontFamily ">
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <h5 class="borderRed">Madhya Pradesh</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquam ipsam similique cupiditate quis at, unde voluptatem aperiam voluptas sint, incidunt laboriosam recusandae corporis. Dolorem ut eius sapiente nulla odio? ipsum dolor sit amet consectetur adipisicing elit. Molestiae, blanditiis. Perferendis, nesciunt consequatur dolorum, nulla cumque dolores quos corporis quod magnam quo facilis repellendus deleniti et, mollitia repudiandae tempore? Tempore? ipsum, dolor sit amet consectetur adipisicing elit. Mollitia esse sed, saepe laborum eos error.</p>
+    </div>
+    <div>
+        <h3 id="Demo">Lorem ipsum dolor sit amet.</h3>
+        <h5 class="borderRed">Maharashtra</h5>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt provident accusantium delectus quidem qui aliquid nulla facilis repudiandae cumque excepturi. ipsum, dolor sit amet consectetur adipisicing elit. Mollitia esse sed, saepe laborum eos error.</p>
+    </div>
+
+    <button id="Demo" onclick="showDate();">Click me to show Todays Date</button>
+    <p id="demo2"></p>
+    <script>
+        function showDate(){
+        document.getElementById('demo2').innerHTML = Date();
+        }
+    </script>
+</body>
+</html>

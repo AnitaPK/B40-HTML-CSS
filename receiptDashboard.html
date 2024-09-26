@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/logo.jpg">
     <title>Receipe dashboard</title>
+    <link rel="stylesheet" href="./navbar.css" />
     <style>
         body{
             background-image: url('./assets/backgroundImage.jpg');
             background-size: cover;
+            margin: 0;
         }
-        a:link{
+        a.Button:link{
             font-size: x-large;
             text-decoration: none;
             background-color: blue;
@@ -19,20 +21,29 @@
             /* padding: 10px 20px 30px 40px ; */
             padding : 10px 20px;
         }
-        a:hover{
+        a.Button:hover{
             color:black;
         }
-        a:active{
+        a.Button:active{
             color:chocolate;
         }
-        a:visited{
+        a.Button:visited{
             font-size: xx-large;
             color: rgb(255, 255,255);
         }
 
     </style>
 </head>
-<body style="background-color: #ffffd9;">
+<body>
+    <!-- Navbar -->
+    <ul class="nav">
+        <a href="./receiptDashboard.html"><img class="logo" src="./assets/logo.jpg" alt="LogoImage" /></a>
+
+        <li class="navItems"><a href="./receiptDashboard.html" class="navLink">Home</a></li>
+        <li class="navItems"><a href="#" class="navLink">Services</a></li>
+        <li class="navItems"><a href="#" class="navLink">About Us</a></li>
+        <li class="navItems"><a href="#" class="navLink">Contact us</a></li>
+    </ul>
     <!-- this is code for heading  -->
     <h1 style="color: orange;margin-top:250px;text-align: center;font-size: 75px;"><b>Feast Finder</b></h1>
     <hr>
@@ -47,8 +58,8 @@
     <h3 style="color: orange;"><em>Food Receipe Website</em></h3>
     <p>Fastest Food Delivery</p>
     <p style="margin-bottom: 30px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid ea magnam odio fugit facere temporibus nemo explicabo repellendus. Ea facilis cum voluptate, doloremque dolor sint!</p>
-    <a href="./receiepMoreInfo.html" target="_blank" >More Info of Receipe</a> 
-    <a href="./employeeInfo.html" target="_blank">Emp Info</a>
+    <a href="./receiepMoreInfo.html" target="_blank" class="Button">More Info of Receipe</a> 
+    <a href="./employeeInfo.html" target="_blank" class="Button">Emp Info</a>
 
 
 
