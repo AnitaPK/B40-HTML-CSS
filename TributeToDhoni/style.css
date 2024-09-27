@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: rgb(237, 237, 253);
+}
+
+ul.nav{
+    list-style-type: none;
+    height: 100px;
+    background-color: aliceblue;
+}
+
+ul.nav li.navList{
+    float: left;
+    margin: 20px;
+    padding-top: 15px;
+}
+
+ul.nav li.navList a.navItem{
+    text-decoration: none;
+    font-size: larger;
+    color: rgb(10, 10, 101);
+    padding: 10px;
+    border-radius: 4px;
+}
+ul.nav li.navList a.navItem:hover{
+    color: rgb(0,0,0);
+    background-color: rgb(164, 199, 254);
+}
+ul.nav li.navList a.navItem:visited{
+    color: rgb(10, 10, 101);
+}
+
+header img{
+    width:100%;
+    height: 600px;
+}
+
+.PerInfo{
+    height: 500px;
+    border: 1px solid black;
+}
+.PerInfo div.leftImg{
+    width: 50%;
+    float: left;
+
+}
+.leftImg img{
+    width: 80%;
+    height: 450px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px 35px;
+}
+
+.PerInfo div.rightInfo{
+    width:50%;
+    float: right;
+    padding-top: 30px;
+}
+pre{
+    font-size: x-large;
+}
+pre span{
+    font-weight: bold;
+}
+
+.heading{
+    text-align: center;
+    background-color: rgb(10, 10, 101);
+    color: white;
+    padding: 20px ;
+    font-size: x-large;
+}
+.contact{
+    padding-top:20px;
+}
+.contactDiv{
+    width: 30%;
+    float: left;
+    margin-left: 20px;
+}
+.footer{
+    text-align: center;
+    background-color: gray;
+}
