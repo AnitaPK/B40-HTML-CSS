@@ -40,7 +40,6 @@ header img{
 
 .PerInfo{
     height: 500px;
-    border: 1px solid black;
 }
 .PerInfo div.leftImg{
     width: 50%;
@@ -85,4 +84,37 @@ pre span{
 .footer{
     text-align: center;
     background-color: gray;
+}
+.aboutDiv{
+    padding: 10px 20px;
+    height: 150px;
+}
+
+.aboutDiv .aboutDivImage{
+    width: 30%;
+    float: left;
+    padding: 10px 85px;
+}
+.aboutDivImage img{
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 5px auto;
+}
+
+.aboutDiv .aboutDivContent{
+    width:65%;
+    float: right;
+}
+.aboutDivContent h3{
+    text-align: center;
+}
+.aboutDivContent p{
+    text-align: justify;
+    font-size: larger;
+}
+.aboutDivContent h3{
+    color: rgb(10, 10, 101);
+    font-weight: bolder;
 }
