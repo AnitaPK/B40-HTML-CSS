@@ -41,6 +41,22 @@
             color: aliceblue;
             font-size: 130%;
         }
+        .DivModelBox{
+            box-sizing: border-box;
+            height: 200px;
+            min-width: 300px;
+            background-color: coral;
+            padding: 50px;
+           border:5px solid rgb(238, 9, 9);
+           margin: 50px;
+           /* overflow: hidden; */
+           /* overflow-y: scroll; */
+           outline: 10px dotted rgb(253, 166, 79);
+           border-radius: 20px;
+        }
+        /* .DivModelBox:hover{
+            overflow: visible;
+        } */
     </style>
 </HEAD>
 <body>
@@ -62,6 +78,14 @@
 
     <button id="Demo" onclick="showDate();">Click me to show Todays Date</button>
     <p id="demo2"></p>
+
+
+    <div class="DivModelBox">Lo. Doloribus laborum ri sci quaerat quis exercitationem ab pariatur eos, neque alias tempora maxime beatae eius. Nam dignissimos beatae tempore repellat? Esse sit quam dolore, dolorum enim optio commodi possimus molestias repudiandae placeat soluta veritatis culpa eligendi sunt neque vitae earum quas accusantium aspernatur dolores consectetur? Magnam quae delectus omnis sunt nulla voluptates ullam, alias soluta aut quod sapiente, eum obcaecati, consequuntur totam possimus! Quis dolores natus adipisci necessitatibus doloribus pariatur sed aperiam numquam!</div>
+
+
+
+
+
     <script>
         function showDate(){
         document.getElementById('demo2').innerHTML = Date();
