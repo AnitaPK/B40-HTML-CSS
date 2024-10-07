@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         *{
-
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
         .borderBlack{
             border: 1px solid black;
@@ -57,9 +60,68 @@
         /* .DivModelBox:hover{
             overflow: visible;
         } */
+    
+    /* .parentDiv p{
+        color:red;
+    } */
+
+    /* .parentDiv > p{
+        color: blue;
+    } */
+    /* .parentDiv div + p{
+        color:blue
+    } */
+    .parentDiv div ~ p{
+        color:blue
+    }
+    img[alt|='flo']{
+        border: 5px ridge blue;
+    }
+    .navbar{
+        height: 50px;
+        width: 700px;
+        background-color: black;
+        color: aliceblue;
+        text-align: center;
+        padding-top: 20px;
+        position: sticky;
+        top:0
+        /* left:20px; */
+        /* top:50px; */
+        /* z-index: 1; */
+    }
+    .relativeDiv{
+        height: 400px;
+        width: 100%;
+        background-color: aquamarine;
+        position: relative;
+    }
+    .absoluteDiv{
+        height: 100px;
+        width: 300px;
+        background-color: chartreuse;
+        position: absolute;
+        bottom:35%;
+        right:40%;
+    }
+    .watsappLogo{
+        height: 120px;
+        width:120px;
+        background-color: rgb(66, 253, 66);
+        color: white;
+        font-size: 90px;
+        text-align: center;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding-top: 15px;
+    }
     </style>
 </HEAD>
 <body>
+<header>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum hic ad itaque sint sit laudantium pariatur tempora? Ab ea accusantium nemo. Incidunt porro tempora laboriosam perferendis eligendi, velit, quis natus neque dignissimos ut vero illum et reiciendis omnis animi quia mollitia? Saepe quibusdam a eaque quasi! Cumque id ducimus velit alias voluptatem, doloribus dolor maxime rerum illo veniam atque illum nihil impedit ea officia consectetur amet voluptatibus eius! Quia reiciendis quo omnis consectetur beatae molestiae nulla animi? Neque perferendis culpa soluta deleniti earum facere blanditiis, cumque, assumenda in ex hic totam consequatur reiciendis quos ullam nesciunt voluptate? Ipsum, architecto! Ea error beatae debitis dolores tenetur illum quas pariatur magnam minima officiis! Inventore aspernatur voluptatum sit at id! Doloremque, cupiditate at fuga tempore expedita repellendus dolorem minus repellat voluptatum dolor excepturi est nemo qui odit a deleniti eius doloribus vero officiis molestias. Facilis vel nisi, quas, ad quidem, asperiores velit in distinctio aliquid provident dignissimos sequi voluptatum quisquam explicabo ducimus ut tenetur mollitia voluptas temporibus corporis doloribus. Assumenda aliquid veniam rem neque blanditiis officia, quis eum, harum ea nemo repellendus culpa cumque doloribus dolor consequatur quas obcaecati quasi minus adipisci, dolore cupiditate? Laborum consequuntur ratione cum! Culpa, officia quam. Ipsum laudantium, nulla alias nisi dolor aliquam officiis obcaecati aperiam animi vero tempore illum, voluptatem maxime error esse deleniti fugit ut nam eius quas id adipisci neque? Praesentium atque velit ipsa, reiciendis illum perspiciatis in quaerat est id molestiae nam modi tempora voluptatum. Accusantium neque, tempora quam deserunt delectus dignissimos vero at odit dolores saepe nobis omnis quibusdam sapiente repellat iusto totam sint libero non. Aliquid voluptatum architecto aliquam accusamus excepturi natus veritatis optio eius repellendus, ad facilis vel. Officia illo explicabo tempore molestias et culpa, aliquam reiciendis expedita officiis totam quaerat, molestiae maiores praesentium perspiciatis fugit facere corrupti nihil, perferendis voluptatum!</header>
+    <nav class="navbar">Navbar</nav>
     <div style="background-color: blueviolet;" class="borderBlack fontFamily" >
         <h3>Lorem ipsum dolor sit amet.</h3>
         <h5 class="borderRed">Uttar Pradesh</h5>
@@ -82,10 +144,26 @@
 
     <div class="DivModelBox">Lo. Doloribus laborum ri sci quaerat quis exercitationem ab pariatur eos, neque alias tempora maxime beatae eius. Nam dignissimos beatae tempore repellat? Esse sit quam dolore, dolorum enim optio commodi possimus molestias repudiandae placeat soluta veritatis culpa eligendi sunt neque vitae earum quas accusantium aspernatur dolores consectetur? Magnam quae delectus omnis sunt nulla voluptates ullam, alias soluta aut quod sapiente, eum obcaecati, consequuntur totam possimus! Quis dolores natus adipisci necessitatibus doloribus pariatur sed aperiam numquam!</div>
 
+<div style="border:1px solid black" class="parentDiv">
+    <p>Lorem, ipsum dolor sit amet <span>Lorem ipsum dolor sit amet.</span>consectetur adipisicing elit. Libero, architecto?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptates!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, laboriosam.</p>
+    <div>Div Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, dolorum!</div>
+    <p>1  . Paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, doloribus?</p>
+    <div>DivLorem ipsum dolor, <p>2. Paragraph</p>sit amet consectetur adipisicing elit. Inventore, delectus?</div>
+    <p>3. ParagraphLorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, quod.</p>
+</div>
 
+<img src="./assets/lotus flower.jpg" alt="flo-wer" >
+<img src="./assets/gulabjamun.jpg" alt="hjkbflo" >
 
+<div class="relativeDiv">
+    <div class="absoluteDiv"></div>
+</div>
 
-
+<div class="watsappLogo">
+<i class="fa-brands fa-whatsapp"></i>
+</div>
     <script>
         function showDate(){
         document.getElementById('demo2').innerHTML = Date();
