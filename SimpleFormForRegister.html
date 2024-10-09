@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="./SimpleFormForRegister.css" />
+</head>
+
+<body>
+    <h3>Register Form</h3>
+    <form>
+        <h3 style="text-align: center; margin-bottom: 10px;"> Register </h3>
+        <div class="row">
+            <div class="colLable">
+                <lable for="firstName">first Name:</lable>
+            </div>
+            <div class="colInput">
+                <input type="text" id="firstName" />
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="colLable">
+                <lable for="lastName">last Name:</lable>
+            </div>
+            <div class="colInput"><input type="text" id="lastName" /></div>
+        </div>
+        <div class="row">
+            <div class="colLable">
+                <lable>Mobile number</lable>
+            </div>
+            <div class="colInput"><input type="number" id="number" /></div>
+        </div>
+
+        <div class="row">
+            <div class="colLable">
+                <lable>Birth Date</lable>
+            </div>
+            <div class="colInput"> <input type="date" id="date" /></div>
+        </div>
+        <div class="row">
+            <div class="colLable">
+                <lable>Email Address</lable>
+            </div>
+            <div class="colInput"><input type="email" id="email" /></div>
+        </div>
+
+        <div class="row">
+            <div class="colLable">
+                <lable>Password</lable>
+            </div>
+            <div class="colInput"><input type="password" id="password" /></div>
+        </div>
+
+        <div class="row">
+            <div class="colLable">
+                <lable>Upload Photo</lable>
+            </div>
+            <div class="colInput"><input type="file" id="file" /></div>
+        </div>
+        <button class="btn btn-admin">Submit By Admin</button>
+        <input type="submit" class="btn btn-simple" id="submitButton" />
+        <input type="reset" class="btn btn-simple" />
+        <p>If already Registered <a href="./SimpleFormForLogin.html">Click here</a></p>
+    </form>
+</body>
+
+</html>
