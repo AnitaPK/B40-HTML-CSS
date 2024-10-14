@@ -10,35 +10,43 @@
 
 <body>
     <h3>Register Form</h3>
-    <form>
+    <form >
         <h3 style="text-align: center; margin-bottom: 10px;"> Register </h3>
         <div class="row">
             <div class="colLable">
-                <lable for="firstName">first Name:</lable>
+                <lable for="firstName">first Name<sup>*</sup>:</lable>
             </div>
             <div class="colInput">
-                <input type="text" id="firstName" />
+                <input type="text" id="firstName" name="firstName" required autofocus />
 
             </div>
         </div>
         <div class="row">
             <div class="colLable">
-                <lable for="lastName">last Name:</lable>
+                <lable for="lastName">last Name<sup>*</sup>:</lable>
             </div>
-            <div class="colInput"><input type="text" id="lastName" /></div>
+            <div class="colInput"><input type="text" id="lastName" name="lastName" required/></div>
         </div>
         <div class="row">
             <div class="colLable">
                 <lable>Mobile number</lable>
             </div>
-            <div class="colInput"><input type="number" id="number" /></div>
+            <div class="colInput"><input type="number" id="number" name="mobileNumber" /></div>
         </div>
+        <div class="row">
+            <div class="colLable">
+                <lable>Select Gender</lable>
+            </div>
+            <lable>Male</lable><input type="radio" value="male" name="gender" />
+            <label>Female</label><input type="radio" value="female" name="gender" />
+            <label>Other</label><input type="radio" value="other" name="gender" />
 
+        </div>
         <div class="row">
             <div class="colLable">
                 <lable>Birth Date</lable>
             </div>
-            <div class="colInput"> <input type="date" id="date" /></div>
+            <div class="colInput"> <input type="date" id="date" disabled/></div>
         </div>
         <div class="row">
             <div class="colLable">
@@ -58,9 +66,46 @@
             <div class="colLable">
                 <lable>Upload Photo</lable>
             </div>
-            <div class="colInput"><input type="file" id="file" /></div>
+            <div class="colInput">
+                <input type="file" id="file" />
+            </div>
         </div>
-        <button class="btn btn-admin">Submit By Admin</button>
+
+        <div class="row">
+            <div class="colLable">
+                <label>Select Department</label>
+            </div>
+            <div class="colInput" >
+                <input type="checkbox" name="department" value="humanResource"/><label>Human Resource</label><br>
+                <input type="checkbox" name="department" value="finance"/><label>Finance</label><br>
+                <input type="checkbox" name="department" value="technical"/><label>Technical</label><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="colLable">
+                <label>add Address</label>
+            </div>
+            <div class="colInput">
+<textarea rows="5" cols="30"></textarea>
+</div>
+        </div>
+
+        <div class="row">
+            <div class="colLable">
+            <label>
+                Choose Subject
+            </label></div>
+            <div class="colInput">
+                <select name="subjects" size="2" multiple >
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">Javascript</option>
+                </select>
+
+            </div>
+        </div>
+        <!-- <br><br> -->
+        <button class="btn btn-admin" disabled>Submit By Admin</button>
         <input type="submit" class="btn btn-simple" id="submitButton" />
         <input type="reset" class="btn btn-simple" />
         <p>If already Registered <a href="./SimpleFormForLogin.html">Click here</a></p>
