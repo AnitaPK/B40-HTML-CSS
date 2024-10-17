@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <lable>Add First Name</lable>
+    <input type="text" id="takeInput"  />
+    <label for="country_code">Country code:</label>
+    <input type="text" id="email_code" name="country_code" pattern="[a-z0-9-_]@gmail.com"
+        title="Three letter country code"><br><br>
+    <button onClick="showName();" id="buttonClick">Show Name</button>
+    <p id="nameInPtag" title="Showing Name after click"></p>
+    <p id="emailShow"></p>
+
+    <script>
+        function showName() {
+            firstName = document.getElementById('takeInput').value
+            document.getElementById('nameInPtag').innerHTML = firstName
+            // console.log(firstName);
+            email = document.getElementById('email_code').value
+            document.getElementById('emailShow').innerHTML = email
+            browser = document.getElementById('browser').value
+            console.log(browser);
+        }
+    </script>
+    <noscript>
+
+    </noscript>
+
+
+    
+<form>
+    <input list="browsers" name="browser" id="browser">
+    <datalist id="browsers">
+      <option value="Edge">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+   
+    </datalist>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+
+</html>
