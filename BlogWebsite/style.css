@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* navbar css */
+nav{
+    height: 45px;
+    background-color: #006266;
+}
+div.navBrand {
+    width: 25px;
+    display: inline-block;
+    margin: 7px 10px 20px 7px ;
+    /* padding-top: 10px; */
+    font-size: x-large;
+}
+
+div.navbar{
+    margin-left: 50%;
+    display: inline-block;
+}
+ul.nav{
+    list-style-type: none;
+}
+
+li.navList{
+    float: left;
+    margin: 8px 10px;
+    font-size: larger;
+}
+
+a.navItem{
+    text-decoration: none;
+}
+/* header css  */
+
+.headerImage{
+    width: 100%;
+    height: 600px;
+}
+.parentClass{
+    position: relative;
+}
+.WhiteBoxOnHeader{
+    background-color: white;
+    width:250px;
+    position: absolute;
+    top:30%;
+    right:10%;
+    padding: 10px;
+
+}
+.WhiteBoxOnHeader p, h3, button{
+    color: black;
+    padding: 5px;
+    margin-left: 10px;
+}
+.WhiteBoxOnHeader h3{
+    text-align: center;
+}
+.headingMain{
+    color: black;
+
+}
+.headingMain{
+    position: absolute;
+    left: 45%;
+    top:5px;
+    font-family: cursive;
+    font-size: xx-large;
+    color: white;
+}

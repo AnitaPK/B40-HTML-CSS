@@ -1,0 +1,36 @@
+.nav1{
+    display: flex;
+    flex-direction: row;
+    /* justify-content:space-around; */
+
+}
+
+.navItem{
+    border-bottom: 2px solid red;
+    padding: 2px;
+    margin: 10px;
+    /* width: 100px; */
+}
+.navItem a{
+    text-decoration: none;
+}
+header p {
+    background-image: url("../assets/biryani.jpg");
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 120px;
+      text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-family: 'Steelfish Rg', 'helvetica neue', 
+                      helvetica, arial, sans-serif;
+      font-weight: 800;
+      margin-top: 10px;
+ }
+
+@media (max-width:600px){
+    .nav1{
+        flex-direction: column;
+        text-align: center;
+    }
+}

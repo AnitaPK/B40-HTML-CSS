@@ -118,3 +118,30 @@ pre span{
     color: rgb(10, 10, 101);
     font-weight: bolder;
 }
+
+@media (max-width:700px){
+    body{
+    background-image: url('./aboutus.jpg');
+    }
+}
+
+
+
+@media (max-width:450px){
+    body{
+        background-image: url('./ourMission.png')
+        }
+    ul.nav li.navList{
+        float:none;
+        clear: left;
+    }
+    .PerInfo div.leftImg, .PerInfo div.rightInfo{
+        width: 100%;
+    }
+    .PerInfo div.leftImg img{
+        border-radius: 0px;
+        width:100%
+    }
+
+
+}

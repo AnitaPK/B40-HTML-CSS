@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .containerGrid{
+            display: grid;
+            background-color: brown;
+            /* grid-template-rows: 1fr 1fr; */
+            grid-template-columns: repeat(4, 1fr) ;
+            /* gap: 10px; */
+        }
+        .item{
+            /* background-color: rgb(234, 176, 176); */
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            padding-top: 40px;
+            border: 1px solid white;
+        }
+        .item1{
+            /* grid-row-start: 1;
+            grid-row-end: 3; */
+            background-color: rgb(165, 75, 75);
+            border: 1px solid white;
+        }
+        .item2{
+            background-color: rgb(88, 19, 19);
+            border: 1px solid white;
+        }
+        .item3{
+            background-color: rgb(211, 110, 38);
+            border: 1px solid white;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+        .item4{
+            background-color: rgb(211, 208, 38);
+            border: 1px solid white;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .item5{
+            background-color: rgb(38, 211, 196);
+            border: 1px solid white;    
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .item6{
+            background-color: rgb(38, 211, 119);
+            border: 1px solid white;
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+        hr{
+            border: none;
+            height: 10px;
+            background-color: rgb(8, 12, 11);
+        }
+        .layout{
+            display: grid;
+            grid-template-areas: 'Header1   Header1    Header1   Header1    Header1'
+                                 'Menu1     Main        Main     Main       right1'
+                                 'Menu1     footer1     footer1  footer1    footer1';
+        }
+        .header1{
+            grid-area: Header1;
+            background-color: beige;
+            height: 50px;
+        }
+        .menu1{
+            grid-area: Menu1;
+            background-color: cadetblue;
+            padding: 10px;
+
+        }
+        .main1{
+            grid-area: Main;
+            background-color: chartreuse;
+            padding: 10px;
+
+        }
+        .right{
+            grid-area: right1;
+            background-color: coral;
+            padding: 10px;
+
+        }
+        .footer1{
+            grid-area: footer1;
+            background-color: darkmagenta;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="containerGrid">
+        <div class="item1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, amet.</div>
+        <div class="item2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, consectetur!</div>
+        <div class="item3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque deserunt maxime, amet eaque unde officia, ratione aperiam veritatis delectus tempora similique adipisci laborum corrupti! Ullam maxime natus id quae, sint harum nisi inventore, nemo tenetur suscipit aliquam delectus beatae explicabo.</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <!-- <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div> -->
+
+    </div>
+
+    <hr>
+
+    <div class="layout">
+        <div class="header1" ><nav></nav>></div>
+         <div class="menu1" >menu</div>
+        <div class="main1" >main</div>
+        <div class="right" >right</div>
+        <div class="footer1" >footer</div>
+    </div>
+</body>
+</html>
