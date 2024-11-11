@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image&Links</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="./logo.jpg" >
     <style>
         *{
@@ -64,12 +65,89 @@
             /* background-size:cover; */
             padding-top: 170px;
                 }
+        a:link{
+            /* color:green; */
+        }
+        a.demo:hover{
+            text-decoration: none;
+            color:red;
+        }
+        a.demo:active{
+            color:orange;
+        }
+        a.demo:visited{
+            color:green;
 
+        }
+        a.topArrow{
+            color: black;
+            font-size: x-large;
+            border: 1px solid black;
+            border-radius: 50%;
+            padding: 2px 5px;
+        }
+        .UnorderedList{
+            list-style-type: square;
+        }
+        nav{
+            background-color: burlywood;
+            height: 90px;            
+        }
+.navbar1{
+    list-style-type: none;
+    /* display: inline-block; */
+    float: left;
+    /* padding-left: 0;     */
+    margin-top: 25px;
+}
+.navList{
+    display: inline-block;
+    margin-right: 20px;
+
+}
+.navItem:link{
+    color: brown;
+    text-decoration: none;
+    font-size: x-large;
+    padding: 3px;
+}
+.navItem:hover{
+    background-color: rgb(253, 179, 83);
+    text-decoration: underline;
+}
+.navItem:visited{
+    color: brown;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: 15px;
+    float: left;
+}
+.loginIcon{
+    margin-left: 40%;
+    margin-top: 30px;
+    display: inline-block;
+}
     </style>
 </head>
 <body>
-    <img src="../assets/gulabjamun.jpg" alt="this is my image" style="" class="header1" id="demo" />
-<div>
+    <nav>
+        <img src="./logo.jpg" class="logo">
+        <ul class="navbar1">
+            <li class="navList"><a href="#" class="navItem">Home</a></li>
+            <li class="navList"><a href="#" class="navItem">Gallary</a></li>
+            <li class="navList"><a href="#" class="navItem">Contact Us</a></li>
+            <li class="navList"><a href="#aboutUs" class="navItem">About Us</a></li>
+
+        </ul>
+        <div class="loginIcon">Login <i class="fa-solid fa-right-to-bracket"></i></div>
+    </nav>
+    <h1 style="height: 150px; background-color: orange; color: red; text-align: center; padding-top: 30px;">My Website</h1>
+    <img src="../assets/gulabjamun.jpg" alt="this is my image" style="" class="header1" id="goToTop" />
+<div id="aboutUs">
     <div class="leftDiv width50">
         <img src="../assets/burgerImage.jpg" alt="" id="leftImg">
     </div>
@@ -83,6 +161,59 @@
 <div class="discription">
     <p>
 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, temporibus?
-        </p
+    </p>
+</div>
+
+<a href="https://wisdomsprouts.in/" target="" class="demo"> Wisdom Sproutes</a>
+<a href="https://www.udemy.com/course/java-se-programming/?utm_source=bing&utm_medium=udemyads&utm_campaign=BG-Search_Keyword_Beta_Prof_la.EN_cc.India&campaigntype=Search&portfolio=Bing-India&language=EN&product=Course&test=&audience=Keyword&topic=Java&priority=Beta&utm_content=deal4584&utm_term=_._ag_1322714876499369_._ad__._kw_Java+tutorial_._de_c_._dm__._pl__._ti_kwd-82670801257607%3Aloc-90_._li_156924_._pd__._&matchtype=e&msclkid=2f6e7aa1d9061eca879d1d8c4355c2bd&couponCode=IND21PM" class="demo">java Tutorial Udemy</a>
+<a href="./firstPage.html" class="demo"> first Page</a>
+<a href="#goToTop" class="topArrow"> <i class="fas fa-long-arrow-up"></i></a>
+
+
+list 
+Oredered List 
+Unorderd list 
+Discriptive List 
+
+<dl>
+    <dt>HTML</dt>
+    <dd>HTML Tutorial ... HTML is the standard markup language for Web pages. With HTML you can create your own Website.</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheet</dd>
+</dl>
+<ol type="I" start="101" class="">
+    <li>Item1</li>
+    <li>Item2</li>
+    <li>Item3</li>
+    <li>Item4</li>
+    <li>Item5</li>
+    <ol>
+        <li>Item5.1</li>
+        <li>Item5.2</li>
+    </ol>
+    <li>Item6</li>
+</ol>
+<ul class="UnorderedList">
+    <li>Item1</li>
+    <ul>
+        <li>Item1.1</li>
+        <ul>
+            <li>Item1.1.1</li>
+            <li>Item1.1.2</li>
+
+        </ul>
+        <li>Item1.2</li>
+
+    </ul>
+    <li>Item2</li>
+    <li>Item3</li>
+    <li>Item4</li>
+
+</ul>
+
+    <script>
+        console.log("Hello")
+    </script>
+    <!-- <script src="./script.js"></script> -->
     </body>
 </html>
