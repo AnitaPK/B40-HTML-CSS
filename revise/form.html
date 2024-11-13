@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        /* label {
+            color: blue;
+        } */
+
+        input[type='button'] {
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+            padding: 3px 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: larger;
+        }
+
+        .inputForm {
+            background-color: blue;
+            color: white;
+            padding: 7px;
+            border: none;
+        }
+
+        .inputForm:focus {
+            background-color: blueviolet;
+            border-style: double;
+        }
+
+        .formRegistration {
+            width: 50%;
+            background-color: aquamarine;
+            border: 5px solid rgb(24, 241, 168);
+        }
+
+        .Lable {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: larger;
+            padding: 5px 25px;
+
+        }
+
+        .inputTEXT {}
+
+        .rowDiv {
+            width: 100%;
+            clear: both;
+            margin-bottom: 15px;
+        }
+
+        .DivLable {
+            width: 200px;
+            /* display: inline-block; */
+            float: left;
+
+        }
+
+        .DivInput {
+            width: 400px;
+            /* display: inline-block; */
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <legend>Registration Form</legend>
+
+        <fieldset>
+            <div style="background-color: aqua; padding: 10px; margin: 5px auto; width: 500px;">
+                <div style="width: 150px; display: inline-block; margin-bottom: 7px;">
+                    <label for="firstName">firstName</label>
+                </div>
+                <div style="width: 200px; display: inline-block;">
+                    <input type="text" id="firstName" class="inputForm">
+                </div>
+                <br>
+                <div style="width: 150px; display: inline-block; margin-bottom: 7px;">
+                    <label for="lastName" required>last Name</label>
+                </div>
+                <div style="width: 200px; display: inline-block;"><input type="text" id="lastName"></div>
+                <br>
+                <div style="width: 150px; display: inline-block; margin-bottom: 7px;">
+                    <label for="emailAdd">Email</label>
+                </div>
+                <div style="width: 200px; display: inline-block;"><input type="email" id="emailAdd" /></div>
+                <br>
+                <div style="width: 150px; display: inline-block; margin-bottom: 7px;">
+                    <label for="password">Password</label>
+                </div>
+                <div style="width: 200px; display: inline-block;"><input type="password" /></div>
+                <br>
+                <!-- <button>Click Me</button> -->
+                <div style="margin: 3px auto; width: 100px;"><input type="submit" /></div>
+                <!-- <input type="reset" /> -->
+                <!-- <input type="button" value="Click me Button"> -->
+                <input type="file" />
+            </div>
+        </fieldset>
+    </form>
+
+
+    <form>
+        <div class="formRegistration">
+            <div class="rowDiv">
+                <div class="DivLable">
+                    <lable class="Lable">First Name</lable>
+                </div>
+                <div class="DivInput">
+                    <input type="text" class="inputTEXT" name="firstName" />
+                </div>
+            </div>
+            <br>
+            <div class="rowDiv">
+                <div class="DivLable">
+                    <lable class="Lable">Last Name</lable>
+                </div>
+                <div class="DivInput">
+                    <input type="text" class="inputTEXT" name="lastName" />
+                </div>
+            </div>
+            <br>
+            <div class="rowDiv">
+                <div class="DivLable">
+                    <lable class="Lable">Contact Number</lable>
+                </div>
+                <div class="DivInput">
+                    <input type="text" class="inputTEXT" name="ConatctNumber" />
+                </div>
+            </div>
+            <br>
+            <div class="rowDiv">
+                <div class="DivLable">
+                    <lable class="Lable">D O B</lable>
+                </div>
+                <div class="DivInput">
+                    <input type="date" class="inputTEXT" name="DOB" />
+                </div>
+            </div>
+            <br>
+            <div class="rowDiv">
+                <div class="DivLable">
+                    <lable class="Lable">Gender</lable>
+                </div>
+                <div class="DivInput">
+                    <input type="radio" class="inputTEXT" name="gender" value="male" />
+                    <label>Male</label><br>
+                    <input type="radio" class="inputText" name="gender" value="female" />
+                    <label>Female</label>
+                </div>
+            </div>
+            <br>
+            <div class="rowDiv">
+                <div class="DivLable">
+                    <lable class="Lable">Address</lable>
+                </div>
+                <div class="DivInput">
+                    <textarea cols="30"></textarea>
+                </div>
+            </div>
+            <br>
+            <div class="rowDiv">
+                <div class="DivLable">
+                    <lable class="Lable">Select Branch</lable>
+                </div>
+                <div class="DivInput">
+                    <select name="branch">
+                        <option value="Computer">Computer</option>
+                        <option value="Mechanical">Mechanical</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="rowDiv" style="margin-left: 40%;">
+                <input type="button" value="Submit" />
+            </div>
+
+        </div>
+    </form>
+</body>
+
+</html>
