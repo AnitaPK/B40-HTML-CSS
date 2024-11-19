@@ -1,82 +1,273 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>traveling</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+  <title>traveling</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!--font awesome link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
-    .logoBrand{
+    .logoBrand {
       font-family: cursive;
       color: orangered;
     }
-  </style>  
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
-        <img src="./assets/leftHeaderImage.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-        <span class="logoBrand">TravelWithUs</span></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mr-auto" >
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Tours</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Packages</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-          
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
 
-    </nav>
-      <h1 class="bg-warning p-3">Hello world</h1>
-      <div class="row">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, doloremque.</p>
-      </div>
-      <hr>
-    <div class="container-fluid" style="height: 200px;">
-    <div class="row" >
-        <div class="col-12 col-md-6 ">
-            <img src="./assets/leftHeaderImage.jpg" class=" w-70 h-70 rounded-circle d-block m-auto"/>
+    .card {
+      border: none;
+    }
+
+    .card:hover {
+      border: 1px solid rgb(47, 185, 244);
+      box-shadow: 2px 2px 3px gray;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="./assets/leftHeaderImage.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+      <span class="logoBrand">TravelWithUs</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tours</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Packages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+
+      </ul>
+
+      <form class="form-inline my-2 my-lg-0">
+        <button style="border: none;" class="bg-dark mr-3" type="button" data-toggle="modal"
+          data-target="#exampleModal"><i class="fa-solid fa-user text-primary" style="font-size: 25px;"></i></button>
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+
+  </nav>
+
+
+  <!-- carousel code  -->
+  <div style="height: 500px;">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-interval="1000">
+          <img src="./assets/corousel1.jpg" class="d-block w-100" alt="..." height="500">
+          <div class="carousel-caption d-none d-md-block">
+            <img src="./assets/kumbh2025Prayag.jpg" class="rounded-circle">
+            <h3 class="text-dark font-weight-bolder fa-2x">KUMBHMELA in Prayag</h3>
+            <button class="btn btn-dark">Book Now</button>
+          </div>
         </div>
-    
-    <div class="col-12 col-md-6 ">
-        <h3 class="text-center text-primary border ">Travel websites</h3>
-        <p class="lead">Make your business shine online with a custom travel website designed just for you by a professional designer. Need ideas? We’ve collected some amazing examples of travel websites from our global community of designers. Get inspired and start planning the perfect travel web design today.</p>
-    <button class="btn btn-outline-primary">Click me for more info</button>
+        <div class="carousel-item" data-interval="1000" >
+          <img src="./assets/corousel2.jpg" class="d-block w-100" alt="..." height="500">
+        </div>
+        <div class="carousel-item" data-interval="1000">
+          <img src="./assets/corousel3.avif" class="d-block w-100" alt="..." height="500">
+        </div>
+        <div class="carousel-item" data-interval="1000">
+          <img src="./assets/corousel4.jpg" class="d-block w-100" alt="..." height="500">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
+  </div>
+
+
+
+  <div class="container-fluid" style="height: 200px;">
+    <div class="row">
+      <div class="col-12 col-md-6 ">
+        <img src="./assets/leftHeaderImage.jpg" class=" w-70 h-70 rounded-circle d-block m-auto" />
+      </div>
+
+      <div class="col-12 col-md-6 ">
+        <h3 class="text-center text-primary border ">Travel websites</h3>
+        <p class="lead">Make your business shine online with a custom travel website designed just for you by a
+          professional designer. Need ideas? We’ve collected some amazing examples of travel websites from our global
+          community of designers. Get inspired and start planning the perfect travel web design today.</p>
+        <button class="btn btn-outline-primary">Click me for more info</button>
+      </div>
 
     </div>
-    <div class="container-fluid">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, blanditiis?</p>
+
+
+
+    <!-- cards  -->
+    <div class="container-fluid mt-3">
+      <div class="row mb-3 justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-3">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/ayodhya.jpg" class="card-img-top" alt="Ayodhya" height="220px">
+            <div class="card-body">
+              <h5 class="card-title">Chalo Ayodhya</h5>
+              <p class="card-text">Some quick example text to build on the card title.</p>
+              <p class="d-flex justify-content-between">
+                <span class="text-warning"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-regular fa-star"></i></span>
+                <b>₹1234567</b>
+              </p>
+              <a href="#" class="btn btn-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-3">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/goa.jpg" class="card-img-top" alt="Goa" height="220px">
+            <div class="card-body">
+              <h5 class="card-title">Explore Goa</h5>
+              <p class="card-text">Some quick example text to build on the card title.</p>
+              <p class="d-flex justify-content-between">
+                <span class="text-warning"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-regular fa-star"></i></span>
+                <b>₹1567</b>
+              </p>
+              <a href="#" class="btn btn-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-3">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/rishikesh.jpg" class="card-img-top" alt="Rishikesh" height="220px">
+            <div class="card-body">
+              <h5 class="card-title">Rishikesh Darshan</h5>
+              <p class="card-text">Some quick example text to build on the card title.</p>
+              <p class="d-flex justify-content-between">
+                <span class="text-warning"><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i
+                    class="fa-regular fa-star"></i></span>
+                <b>₹231567</b>
+              </p>
+              <a href="#" class="btn btn-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-3">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/shimla.jpg" class="card-img-top" alt="Shimla" height="220px">
+            <div class="card-body">
+              <h5 class="card-title">Shimla</h5>
+              <p class="card-text">Some quick example text to build on the card title.</p>
+              <p class="d-flex justify-content-between">
+                <span class="text-warning"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-regular fa-star"></i></span>
+                <b>₹1567</b>
+              </p>
+              <a href="#" class="btn btn-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="jumbotron">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, sequi!</p>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Register Form</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Enter first Name">
+              </div>
+              <div class="form-group">
+                <label for="ContactNumber">Contact Number</label>
+                <input type="text" class="form-control" id="ContactNumber" placeholder="Enter Phone Number">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1" name="emailAddress">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Enter email">
+              </div>
+
+              <div class="form-group">
+                <label for="selectGender" name="selectGender">select Gender</label>
+
+                <select class="form-control" name="gender" id="selectGender">
+                  <option value="'male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Register</button>
+          </div>
+        </div>
+      </div>
     </div>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+</body>
+
 </html>
